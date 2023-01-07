@@ -21,11 +21,11 @@ blocks:
       jobs:
         - name: Unit tests
           commands:
-            - cd gourmet_wiki
+            - cd gourmet_wiki/gourmet_wiki
             - python manage.py makemigrations
             - python manage.py migrate
             - python manage.py test
         - name: Deploy Checklist
           commands:
-            - cd gourmet_wiki
+            - cd gourmet_wiki/gourmet_wiki
             - python manage.py check --deploy

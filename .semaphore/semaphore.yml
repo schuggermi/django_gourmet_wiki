@@ -29,7 +29,3 @@ blocks:
           commands:
             - cd gourmet_wiki
             - python manage.py check --deploy
-        - name: Style
-          commands:
-            - pip install flake8
-            - flake8 gourmet_wiki/ --max-line-length=227

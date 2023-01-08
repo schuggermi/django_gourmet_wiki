@@ -1,0 +1,40 @@
+#navbar {
+    background-color: var(--light-gray);
+    padding: 0 15px 0 5px;
+}
+
+#navbar-content {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navbar-brand {
+    margin: 0;
+}
+
+#navbar-toggler {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#navbar-dropdown {
+    background-color: var(--light-gray);
+    margin: 0;
+    list-style: none;
+    padding: 0 20px 0 0;
+    transition: 0.6s ease-in-out all;
+    display: none;
+    height: 0;
+}
+
+.navbar-dropdown--item {
+    text-align: right;
+    font-size: 32px;
+}
+
+#navbar-dropdown.navbar-dropdown--slidein {
+    display: initial;
+    height: auto;
+}

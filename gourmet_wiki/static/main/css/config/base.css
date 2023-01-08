@@ -1,0 +1,27 @@
+/* @media (min-width: 576px) { ... }
+@media (min-width: 768px) { ... }
+@media (min-width: 992px) { ... }
+@media (min-width: 1200px) { ... }
+@media (min-width: 1400px) { ... } */
+
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&family=Source+Sans+3:wght@200;300;400;500;600;700;800;900&display=swap');
+:root {
+    --black: rgba(0, 0, 0, 0.8);
+    --light-gray: rgba(50, 50, 50, 0.1);
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Public Sans', sans-serif;
+    color: var(--black)
+}
+
+a, p, input, textarea, li {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 500;
+    color: var(--black);
+}

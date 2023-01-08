@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}
+    <title>Registrieren - Gourmet Wiki - Essen, Getränke und mehr - für genüssliche Menschen und Momente</title>
+{% endblock %}
+
+{% block body %}
+    {% include 'main/components/header.html' %}
+
+    <div class="container">
+        <h2 class="form-title">Jetzt registrieren und Mitglied werden</h2>
+
+        <form method="POST">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <legend>Einfach das Formular ausfüllen um Mitglied zu werden.</legend>
+                {{ register_form.as_table }}
+                {{ register_form.errors }}
+
+                <button class="btn btn-large btn-golden from-left" type="submit">Registrierung abschließen</button>
+                <p class="form-footer">Du besitzt bereits ein Profil? <a href="/login">Anmelden</a></p>
+            </fieldset>
+        </form>
+    </div>
+{% endblock %}

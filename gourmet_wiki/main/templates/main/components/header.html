@@ -1,0 +1,12 @@
+{% load static %}
+
+<header id="header">
+    <div id="header-content">
+        <h1 id="header-content--text">Essen, Getränke und mehr - für genüssliche Menschen und Momente</h1>
+        {% if user.is_authenticated %}
+            <button class="btn btn-large btn-golden from-left">Dein täglicher Schmaus</button>
+        {% else %}
+            <button class="btn btn-large btn-golden from-left">Jetzt anmelden!</button>
+        {% endif %}
+    </div>
+</header>

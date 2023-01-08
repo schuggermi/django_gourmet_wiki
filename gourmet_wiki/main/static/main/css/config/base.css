@@ -5,14 +5,17 @@
 @media (min-width: 1400px) { ... } */
 
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&family=Source+Sans+3:wght@200;300;400;500;600;700;800;900&display=swap');
+
 :root {
     --black: rgba(0, 0, 0, 0.8);
     --light-gray: rgba(50, 50, 50, 0.1);
+    --soft-golden: rgb(224, 205, 103);
 }
 
 body {
     min-height: 100vh;
     margin: 0;
+    position: relative;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -20,8 +23,11 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--black)
 }
 
-a, p, input, textarea, li {
+a, p, input, textarea, li, button, label {
     font-family: 'Source Sans 3', sans-serif;
     font-weight: 500;
     color: var(--black);
 }
+
+.from-right:after { transform-origin: 100% 50%; }
+.from-left:after{  transform-origin: 0 50%; }

@@ -34,3 +34,9 @@ navbarToggler.addEventListener("click", (event) => {
     event.preventDefault()
     navbarDropdown.classList.toggle('navbar-dropdown--slidein')
 })
+
+document.addEventListener("click", (event) => {
+    if(event.target !== navbarToggler && navbarDropdown.classList.contains('navbar-dropdown--slidein')) {
+        navbarDropdown.classList.toggle('navbar-dropdown--slidein')
+    }
+})

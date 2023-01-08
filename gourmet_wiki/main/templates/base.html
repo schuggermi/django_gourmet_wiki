@@ -1,0 +1,32 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    {% block title %}
+        <title>Gourmet Wiki - Dein Guide wenn es um leckeres Essen und Getränke geht</title>
+    {% endblock %}
+
+    {% block css %}
+        <link rel="stylesheet" type="text/css" href="{% static 'main/css/index.css' %}">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    {% endblock %}
+
+    <script src="https://use.fontawesome.com/3c3f948c36.js"></script>
+</head>
+<body>
+    {% include 'components/navbar.html' %}
+
+    {% block body %}
+
+    {% endblock %}
+
+    {% block script %}
+        <script src="{% static 'main/js/navbar.js' %}"></script>
+    {% endblock %}
+</body>
+</html>

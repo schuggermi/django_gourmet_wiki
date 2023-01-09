@@ -19,6 +19,8 @@ WORKDIR /opt/app
 RUN pip install -r requirements.txt --cache-dir /opt/app/pip_cache
 RUN chown -R www-data:www-data /opt/app
 
+RUN python3 gourmet_wiki/manage.py collectstatic --no-input --clear
+
 # start server
 EXPOSE 8020
 STOPSIGNAL SIGTERM
